@@ -1,25 +1,22 @@
-# ICC_exe2
-## Exercício EP-02
-Exercio desenvolvido para a matéria de Introdução a Computação Ciêntifica 2021
-Especificação em ./ESPECIFICACAO.md
+# Exercício EP-03
+## Objetivo
 
-**Aluno:** Leonardo Stefan  - ls16 - GRR20163052
+O objetivo deste exercício é implementar programas para a solução de Equações Diferenciais Ordinárias e Parciais.
 
-### Sobre o projeto
-
-Os projeto desenvolvidos esta no diretorio *./ci1164_2020-sislin*
-
-Para compilar, basta utilizar o comando ```make```  no diretório do projeto
-Para executar basta utilizar comando ```./labSisLin < sistemas.dat``` onde *sistemas.dat* é o arquivo de testes a ser utilizado
+## Especificação
+Implementar programas para resolver as equações diferenciais abaixo, considerando as condições de contorno indicadas:
 
 
-### Das tarefas:
-- [X] 1) Encontrar solução do SL com os 3 métodos propostos;
-- [X] 2) Medir o tempo de cada método;
-- [X] 3) Calcular a **norma L2** do residuo de cada uma das soluções;
-- [ ] 4) Aplicar método de Refinamento;
 
+Em todos os casos, gere resultados para n = 5 e 10 (malha x). Nos casos (b) e (d) considere também m =  3 (malha y).
 
-### Aulas de Referencia:
-https://www.youtube.com/playlist?list=PLS5eXCRgrGwd3jrU6QrR3-u2yzwYCIbhv
-https://www.youtube.com/playlist?list=PLS5eXCRgrGweLsVonsq9J7dFZTUpKXjbG
+Seu programa deve, para cada caso, exibir a matriz aumentada do sistema linear resultante (mariz completa OU diagonais e termos independentes apenas), sua solução (calculada com o método de Gauss-Seidel), a norma L2 do resíduo e o tempo gasto para a solução.
+
+Use como critério de parada do método como sendo o máximo de 50 iterações.
+
+O código que implementa Gauss-Seidel deve estar adaptado para matrizes k−diagonais, considerando que são implementadas com vetores representando apenas as diagonais e termos independentes.
+
+## O que deve ser entregue
+Devem ser entregues os códigos-fonte do programa (em linguagem C), makefile e outros arquivos que sejam necessários à execução do programa (se houver)  usados pelo aluno. Todos estes itens devem ser compactados em um arquivo do tipo .tar , .tgz ou .zip.
+
+Em particular, o arquivo Makefile deve ter os targets de limpeza, como no Exercício EP-02.
