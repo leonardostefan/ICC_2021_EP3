@@ -1,13 +1,14 @@
-    CC     = gcc -g -std=c11
+    CC     = gcc  -std=c11 -g -O3
     CFLAGS = 
     LFLAGS = -lm
 
       PROG = exe3 
-      OBJS = odeSolver.o
+      OBJS = odeSolver.o\
+	  		 utils.o
 
 .PHONY: limpa faxina clean purge all
 
-%.o: %.c %.h 
+%.o: %.c %.h utils.h Makefile 
 	$(CC) -c $(CFLAGS) $<
 
 $(PROG) : % :  $(OBJS) %.o

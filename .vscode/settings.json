@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "*.csv": "csv (colon)",
+        "*.pyx": "python",
+        "utils.h": "c"
+    }
+}
