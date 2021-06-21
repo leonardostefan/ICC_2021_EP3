@@ -1,5 +1,5 @@
-# ICC_exe2
-## Exercício EP-02
+# ICC_exe3
+## Exercício EP-03
 Exercio desenvolvido para a matéria de Introdução a Computação Ciêntifica 2021
 Especificação em ./ESPECIFICACAO.md
 
